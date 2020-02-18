@@ -1,0 +1,11 @@
+# docker
+alias dl='docker ps -l -q'
+alias dps="docker ps"
+alias dpa="docker ps -a"
+
+# SublimeText
+alias s="subl"
+
+# other
+alias guiflow="open ~/src/git/guiflow/guiflow.app"
+

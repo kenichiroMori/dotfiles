@@ -1,0 +1,72 @@
+{
+  "editor.fontFamily": "Source Code Pro",
+  "editor.renderWhitespace": "boundary",
+  "editor.rulers": [80, 120],
+  "editor.cursorBlinking": "smooth",
+  "editor.fontSize": 9,
+  "editor.minimap.enabled": false,
+  "editor.formatOnPaste": true, // ファイル保存時に自動でフォーマット
+  "editor.formatOnType": true, // 入力した行を自動でフォーマット
+  "editor.renderControlCharacters": true, // 制御文字を表示
+  "editor.snippetSuggestions": "top",
+  "editor.dragAndDrop": false,
+  "editor.scrollBeyondLastLine": true,
+  "editor.tabSize": 4,
+  "editor.wordWrap": "off",
+  "editor.multiCursorModifier": "ctrlCmd", // Emmet などのスニペット候補を優先して表示
+  "files.autoGuessEncoding": true,
+  "files.eol": "\n",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true, // ファイルの保存時に最終行以降をトリミング
+  "files.watcherExclude": {
+    "**/images/**": true
+  },
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false, // Markdown のファイルは行末の空白をトリミングしない
+  },
+  "terminal.integrated.scrollback": 200000,
+  "terminal.integrated.fontSize": 9,
+  "terminal.integrated.copyOnSelection": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.colorTheme": "Dracula Soft",
+  "window.zoomLevel": -1,
+  "breadcrumbs.enabled": true,
+  "workbench.statusBar.feedback.visible": false,
+  "markdown.extension.tableFormatter.normalizeIndentation": true,
+  "window.closeWhenEmpty": true,
+  "markdownlint.config": {
+    "MD033": false, // HTMLOK
+    "MD004": false // listのプレフィックス
+  },
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "php-cs-fixer.executablePath": "~/src/php/Vendor/bin/php-cs-fixer",
+  "phpcs.standard": "PSR2",
+  "phpstan.path": "/Users/k_mori/src/php/Vendor/bin/phpstan",
+  "phpmd.validate.executablePath": "/Users/k_mori/src/php/Vendor/bin/phpmd",
+  "phpmd.validate.rulesetsFile": "/Users/k_mori/src/php/config/phpmd.xml",
+  "phpstan.autoloadFile": "/Users/k_mori/src/php/Vendor/autoload.php",
+  "phpstan.noProgress": false,
+  "phpstan.enabled": false,
+  "aws.recentCredentials": [
+    "k_mori@cloudpack.jp",
+    "admin_s3"
+  ],
+  "aws.region": [
+    "ap-northeast-1"
+  ],
+  "aws.profile": "k_mori@cloudpack.jp",
+  "erd-preview.erdPath": "/Users/k_mori/bin/er",
+  "erd-preview.dotPath": "/usr/local/Cellar/graphviz/2.40.1/bin/dot",
+  "extensions.ignoreRecommendations": false,
+  "[sql]": {
+        "editor.tabSize": 2
+    },
+    "editor.largeFileOptimizations": false,
+    "terminal.integrated.rendererType": "dom",
+    "aws.telemetry": false,
+    "git.autofetch": true
+}

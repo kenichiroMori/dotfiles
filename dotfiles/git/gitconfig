@@ -1,0 +1,47 @@
+[user]
+    name = Kenichiro Mori
+    email = k_mori@cloudpack.jp
+[push]
+    default = simple
+[core]
+    editor = code --wait
+    pager = less -R
+    excludesfile = ~/.gitignore_global
+[color]
+    ui = auto
+    status = auto
+    branch = auto
+    diff = auto
+    interactive = auto
+    grep = auto
+[pager]
+[alias]
+    graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
+    refresh= !git fetch origin && git remote prune origin
+    st = status
+    sh = show
+    df = diff -w
+    df1 = diff HEAD~
+    df2 = diff HEAD~2
+    df3 = diff HEAD~3
+    co = checkout
+    ci = commit
+    last = show -1 HEAD --stat -p
+    bull = pudfc = diff --color-words
+    dfc = diff --color-words
+    f = "!git ls-files | grep -i"
+    add = add -p
+    sync = "!git-sync.sh"
+    publish = "!git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)"
+[pager]
+    log = diff-highlight | less
+    show = diff-highlight | less
+    diff = diff-highlight | less
+[interactive]
+    diffFilter = diff-highlight
+[diff]
+    compactionHeuristic = true
+[fetch]
+    prune = true
+[http]
+    sslVerify = false

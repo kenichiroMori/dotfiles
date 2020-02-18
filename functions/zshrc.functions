@@ -1,0 +1,65 @@
+#!/usr/local/bin/zsh
+
+# cd
+## overwrap
+### enhancd試し中
+# function cd() {
+#     builtin cd $@ && ll;
+# }
+
+# peco
+## peco-history
+function peco-history() {
+    history -nr 1 | peco --query "$LBUFFER" | perl -pe 's/\n//g' | pbcopy
+    zle clear-screen
+}
+
+function peco-select-git-add() {
+    local SELECTED_FILE_TO_ADD="$(git status --porcelain | \
+                                  peco --query "$LBUFFER" | \
+                                  awk -F ' ' '{print $NF}')"
+    if [ -n "$SELECTED_FILE_TO_ADD" ]; then
+      BUFFER="git add $(echo "$SELECTED_FILE_TO_ADD" | tr '\n' ' ')"
+      CURSOR=$#BUFFER
+    fi
+    zle accept-line
+}
+
+function peco-git-recent-branches () {
+    local selected_branch=$(git for-each-ref --format='%(refname)' --sort=-committerdate refs/heads | \
+        perl -pne 's{^refs/heads/}{}' | \
+        peco)
+    if [ -n "$selected_branch" ]; then
+        BUFFER="git checkout ${selected_branch}"
+        zle accept-line
+    fi
+    zle clear-screen
+}
+
+## codegrep 
+function codegrep() {
+    suffix=${2}
+    if [ ! -z "${suffix}" ]; then
+        suffix="--${suffix}"
+    fi
+    local SOURCE_PATH=$(ag ${suffix} ${1} | peco --query "${LBUFFER}" | gsed -e "s/:[0-9]\+.*//g")
+    $(which code) ${SOURCE_PATH}
+}
+
+## genpw
+function genpw() {
+    cat /dev/urandom | LC_CTYPE=C tr -dc '[:alnum:]' | fold -w 10 | head -1
+}
+
+## mfa
+function mfa() {
+    oathtool --totp --base32 "${1}"
+    oathtool --totp --base32 "${1}" | pbcopy
+}
+
+# pet
+## pet Register the previous command easily
+# function pprev() {
+#   PREV=$(fc -lrn | head -n 1)
+#   sh -c "pet new `printf %q "$PREV"`"
+# }
