@@ -8,4 +8,4 @@ alias s="subl"
 
 # other
 alias guiflow="open ~/src/git/guiflow/guiflow.app"
-
+alias ll="exa -l"

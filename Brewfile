@@ -26,6 +26,7 @@ brew 'openssl'
 brew 'docker'
 brew 'colordiff'
 brew 'gnu-sed'
+brew 'exa'
 
 brew "go"
 brew "nodebrew"
