@@ -6,6 +6,11 @@ alias dpa="docker ps -a"
 # SublimeText
 alias s="subl"
 
+# exa
+alias ll="exa -l"
+alias lg="exa -l --git"
+alias lt="exa -l -T"
+
 # other
 alias guiflow="open ~/src/git/guiflow/guiflow.app"
-alias ll="exa -l"
+alias unzipp="ditto -V -x -k --rsrc --password"
