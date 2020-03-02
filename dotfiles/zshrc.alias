@@ -8,6 +8,7 @@ alias s="subl"
 
 # exa
 alias ll="exa -l"
+alias lla="exa -la"
 alias lg="exa -l --git"
 alias lt="exa -l -T"
 
