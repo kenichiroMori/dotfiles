@@ -51,6 +51,7 @@ cask 'docker'
 cask 'font-ricty-diminished'
 cask 'microsoft-excel'
 cask 'microsoft-powerpoint'
+cask 'shiftit'
 
 mas 'LINE', id: 539883307
 mas '夜フクロウ', id: 428834068
