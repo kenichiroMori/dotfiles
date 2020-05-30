@@ -61,5 +61,5 @@ export PIPENV_VENV_IN_PROJECT=true
 # direnv
 type direnv > /dev/null 2>&1 && eval "$(direnv hook zsh)"
 
-# 
-
+# cz-cli (cz-conventional-changelog)
+export CZ_ISSUES="re #123"
