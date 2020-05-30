@@ -27,6 +27,7 @@ brew 'docker'
 brew 'colordiff'
 brew 'gnu-sed'
 brew 'exa'
+brew 'git-delta'
 
 brew "go"
 brew "nodebrew"
