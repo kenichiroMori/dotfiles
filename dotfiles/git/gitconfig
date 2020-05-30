@@ -14,7 +14,6 @@
     diff = auto
     interactive = auto
     grep = auto
-[pager]
 [alias]
     graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
     refresh= !git fetch origin && git remote prune origin
@@ -34,11 +33,9 @@
     sync = "!git-sync.sh"
     publish = "!git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)"
 [pager]
-    log = diff-highlight | less
-    show = diff-highlight | less
-    diff = diff-highlight | less
+    diff = delta --color-only --theme='Dracula'
 [interactive]
-    diffFilter = diff-highlight
+    diffFilter = delta --color-only --theme='Dracula'
 [diff]
     compactionHeuristic = true
 [fetch]
