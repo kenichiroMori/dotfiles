@@ -5,7 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "@google/clasp": "^2.3.0",
-    "mermaid.cli": "^0.5.1"
+    "mermaid.cli": "^0.5.1",
+    "npm-check-updates": "^4.1.2"
   },
   "devDependencies": {},
   "scripts": {
