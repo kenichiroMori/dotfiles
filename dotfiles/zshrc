@@ -43,6 +43,10 @@ setopt hist_no_store
 zle -N peco-history
 bindkey '^x^h' peco-history
 
+## set-cz-issues
+autoload -Uz add-zsh-hook
+add-zsh-hook preexec set-cz-issues
+
 # PATH
 ## TODO: 見直したほうがいいのでコメント
 # export GOROOT=/usr/local/opt/go/libexec
@@ -60,6 +64,3 @@ export PIPENV_VENV_IN_PROJECT=true
 
 # direnv
 type direnv > /dev/null 2>&1 && eval "$(direnv hook zsh)"
-
-# cz-cli (cz-conventional-changelog)
-export CZ_ISSUES="re #123"

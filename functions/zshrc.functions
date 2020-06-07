@@ -57,6 +57,11 @@ function mfa() {
     oathtool --totp --base32 "${1}" | pbcopy
 }
 
+function set-cz-issues() {
+    branch_name=$(git symbolic-ref --short HEAD) 2>/dev/null
+    export CZ_ISSUES="re #${branch_name##*/}"
+}
+
 # pet
 ## pet Register the previous command easily
 # function pprev() {
