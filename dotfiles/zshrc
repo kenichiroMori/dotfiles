@@ -62,5 +62,8 @@ export PATH=~/bin/node-bin:$PATH
 # pipenvの.venvのプロジェクト直下に作る
 export PIPENV_VENV_IN_PROJECT=true
 
+# npm install でコケるので
+export NODE_EXTRA_CA_CERTS=/usr/local/etc/openssl/cert.pem
+
 # direnv
 type direnv > /dev/null 2>&1 && eval "$(direnv hook zsh)"
