@@ -8,9 +8,7 @@
     "@mermaid-js/mermaid-cli": "^8.5.1-2",
     "npm-check-updates": "^6.0.1",
     "puppeteer": "^3.3.0",
-    "githon": "^3.3.3"
-  },
-  "devDependencies": {
+    "honkit": "^3.3.10"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
