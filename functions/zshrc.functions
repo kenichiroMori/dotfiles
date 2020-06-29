@@ -59,7 +59,11 @@ function mfa() {
 
 function set-cz-issues() {
     branch_name=$(git symbolic-ref --short HEAD) 2>/dev/null
-    export CZ_ISSUES="re #${branch_name##*/}"
+    if [ "${branch_name}" = "master" ]; then
+        unset CZ_ISSUES
+    else
+        export CZ_ISSUES="re #${branch_name##*/}"
+    fi
 }
 
 # pet
