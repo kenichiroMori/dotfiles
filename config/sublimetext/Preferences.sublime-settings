@@ -28,8 +28,7 @@
 		"phpfmt",
 		"SublimeLinter-contrib-phpstan",
 		"TodoReview",
-		"Vintage",
-		"zzz A File Icon zzz"
+		"Vintage"
 	],
 	"indent_guide_options":
 	[
