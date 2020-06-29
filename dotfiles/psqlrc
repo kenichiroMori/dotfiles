@@ -5,7 +5,7 @@
 \set PROMPT2 '[more] %R > '
 \pset null '[NULL]'
 \set VERBOSITY verbose
-\set HISTFILE ~/.psql_history- :DBNAME
+\set HISTFILE ~/.psql_history/ :DBNAME
 \set HISTCONTROL ignoredups
 \set COMP_KEYWORD_CASE upper
 
