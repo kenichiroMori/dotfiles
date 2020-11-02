@@ -57,7 +57,7 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH=/usr/local/share/git-core/contrib/diff-highlight:$PATH
 export PATH=~/bin:$PATH
 export PATH=~/bin/node-bin:$PATH
-
+export PSQL_EDITOR=vi
 
 # pipenvの.venvのプロジェクト直下に作る
 export PIPENV_VENV_IN_PROJECT=true
