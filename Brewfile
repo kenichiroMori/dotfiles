@@ -5,6 +5,7 @@ tap "mscharley/homebrew"
 tap "versent/taps"
 tap "homebrew/cask-fonts"
 brew "awscli"
+brew "aws-cdk"
 brew "versent/taps/saml2aws"
 brew "git-secrets"
 
