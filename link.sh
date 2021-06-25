@@ -30,7 +30,8 @@ NSYNC=~/src/n_sync
 ln -s ~/src/git/dotfiles/config/karabiner/karabiner.json  ~/.config/karabiner/karabiner.json
 
 # SublimeText
-ln -s ~/src/git/dotfiles/config/sublimetext/Preferences.sublime-settings "~/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings"
+# SublimeTextは作り直してるので、一旦やめ
+# ln -s ~/src/git/dotfiles/config/sublimetext/Preferences.sublime-settings "~/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings"
 
 # VScode
 ln -s ~/src/n_sync/vscode ~/.vscode
