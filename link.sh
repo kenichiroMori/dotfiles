@@ -24,6 +24,7 @@ NSYNC=~/src/n_sync
 [[ ! -s ${NSYNC}/clasprc.json ]] && ln -s ${NSYNC}/.clasprc.json ~/clasprc.json
 [[ ! -d ${NSYNC}/aws ]] && ln -s ${NSYNC}/aws ~/.aws
 [[ ! -d ${NSYNC}/ssh ]] && ln -s ${NSYNC}/ssh ~/.ssh
+[[ ! -d ${NSYNC}/Boostnote ]] && ln -s ${NSYNC}/Boostnote ~/.Boostnote
 
 # karabinar
 ln -s ~/src/git/dotfiles/config/karabiner/karabiner.json  ~/.config/karabiner/karabiner.json
@@ -32,7 +33,6 @@ ln -s ~/src/git/dotfiles/config/karabiner/karabiner.json  ~/.config/karabiner/ka
 ln -s ~/src/git/dotfiles/config/sublimetext/Preferences.sublime-settings "~/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings"
 
 # VScode
-## TODO
 ln -s ~/src/n_sync/vscode ~/.vscode
 
 # athenacli
@@ -42,5 +42,6 @@ ln -s ~/src/n_sync/vscode ~/.vscode
 # prezto
 echo "preztoは~/.zpreztoがあるのが前提なので確認"
 exit
+
 rm ~/.zpreztorc
 ln -s ~/src/git/dotfiles/config/prezto/zpreztorc ~/.zpreztorc
