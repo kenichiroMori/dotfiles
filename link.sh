@@ -26,17 +26,21 @@ NSYNC=~/src/n_sync
 [[ ! -d ${NSYNC}/ssh ]] && ln -s ${NSYNC}/ssh ~/.ssh
 
 # karabinar
-## TODO
-
-# prezto
-## TODO
+ln -s ~/src/git/dotfiles/config/karabiner/karabiner.json  ~/.config/karabiner/karabiner.json
 
 # SublimeText
-## TODO
+ln -s ~/src/git/dotfiles/config/sublimetext/Preferences.sublime-settings "~/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings"
 
 # VScode
 ## TODO
 ln -s ~/src/n_sync/vscode ~/.vscode
 
 # athenacli
-ln -s ~/src/n_sync/athenaclirc ~/.athenacli/athenaclirc
+# 使うようになったらまたやる
+#ln -s ~/src/n_sync/athenaclirc ~/.athenacli/athenaclirc
+
+# prezto
+echo "preztoは~/.zpreztoがあるのが前提なので確認"
+exit
+rm ~/.zpreztorc
+ln -s ~/src/git/dotfiles/config/prezto/zpreztorc ~/.zpreztorc

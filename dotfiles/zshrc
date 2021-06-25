@@ -8,11 +8,10 @@
 [[ -s ~/.zshrc.alias ]] && source ~/.zshrc.alias
 [[ -s ~/.zshrc.alias.local ]] && source ~/.zshrc.alias.local
 
-
 # enhancd
 [[ -s ~/src/git/enhancd/init.sh ]] && source ~/src/git/enhancd/init.sh; ENHANCD_HOOK_AFTER_CD=ll
 
-# colorditt
+# colordiff
 [[ -x `which colordiff` ]] && alias diff='colordiff -u'
 
 # zshrc setting

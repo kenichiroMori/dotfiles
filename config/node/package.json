@@ -6,13 +6,22 @@
   "dependencies": {
     "@google/clasp": "^2.3.0",
     "@mermaid-js/mermaid-cli": "^8.5.1-2",
+    "honkit": "^3.3.10",
+    "json-schema-to-typescript": "^10.1.4",
     "npm-check-updates": "^6.0.1",
-    "puppeteer": "^3.3.0",
-    "honkit": "^3.3.10"
+    "puppeteer": "^3.3.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }

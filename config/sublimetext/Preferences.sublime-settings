@@ -16,7 +16,7 @@
 	[
 		"gray_antialias"
 	],
-	"font_size": 9,
+	"font_size": 10,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -28,7 +28,7 @@
 		"phpfmt",
 		"SublimeLinter-contrib-phpstan",
 		"TodoReview",
-		"Vintage"
+		"Vintage",
 	],
 	"indent_guide_options":
 	[
@@ -60,5 +60,5 @@
 	"theme": "Asphalt.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"typescript_plugin_tsc_version": "1.7.3",
-	"word_wrap": false
+	"word_wrap": false,
 }
