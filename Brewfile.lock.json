@@ -5,10 +5,10 @@
         "revision": "939d2c79693d264b12eb973de72d37195c8fea0d"
       },
       "homebrew/cask": {
-        "revision": "a14b80214ea833076b9b72927f895305ecf84f5e"
+        "revision": "3cbb90a0b37072e65b9c7ea2b6530be48e204fcd"
       },
       "homebrew/core": {
-        "revision": "d6ccfcc87673201457cf4a303bee1388d364f072"
+        "revision": "899a6fbe0c6d87a1443785802612efcf6ec7df22"
       },
       "mscharley/homebrew": {
         "revision": "d1311491c1eefc22de7361aa1c8ece5b40e30e2d"
@@ -1011,6 +1011,12 @@
         "options": {
           "full_name": "rambox"
         }
+      },
+      "font-hack": {
+        "version": "3.003",
+        "options": {
+          "full_name": "font-hack"
+        }
       }
     },
     "mas": {
@@ -1045,7 +1051,7 @@
       "catalina": {
         "HOMEBREW_VERSION": "3.2.0",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "d6ccfcc87673201457cf4a303bee1388d364f072",
+        "Homebrew/homebrew-core": "899a6fbe0c6d87a1443785802612efcf6ec7df22",
         "CLT": "12.4.0.0.1.1610135815",
         "Xcode": "12.4",
         "macOS": "10.15.7"
