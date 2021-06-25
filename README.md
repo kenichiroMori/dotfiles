@@ -14,4 +14,4 @@
 - 手でインストール
     - logi option
     - npm
-        + commitzen
+        + ~~commitzen~~ 対応ずみ（のはず）
