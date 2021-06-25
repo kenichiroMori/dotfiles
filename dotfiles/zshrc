@@ -55,6 +55,7 @@ export GOPATH=$HOME/src/go
 export GOBIN=$GOPATH/bin
 export PATH="$(brew --prefix)/bin:$PATH";
 export PATH=$HOME/.nodebrew/current/bin:$PATH
+export PATH=$HOME/src/tool/node/node_modules/.bin:$PATH
 export PATH=/usr/local/share/git-core/contrib/diff-highlight:$PATH
 export PATH=~/bin:$PATH
 export PATH=~/bin/node-bin:$PATH
