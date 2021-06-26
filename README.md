@@ -2,7 +2,7 @@
 
 ## Usage
 
-1. ./bnew.sh
+1. ./brew.sh
 2. ./setup.sh
 3. ./link.sh
 
