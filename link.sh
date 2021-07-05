@@ -40,9 +40,13 @@ ln -s ~/src/n_sync/vscode ~/.vscode
 # 使うようになったらまたやる
 #ln -s ~/src/n_sync/athenaclirc ~/.athenacli/athenaclirc
 
+ln -s ~/src/tool/adminpack/adminpack ~/bin/adminpack
+
 # prezto
 echo "preztoは~/.zpreztoがあるのが前提なので確認"
 exit
 
 rm ~/.zpreztorc
 ln -s ~/src/git/dotfiles/config/prezto/zpreztorc ~/.zpreztorc
+
+ln -s ~/src/n_sync/clasprc.json ~/.clasprc.json
