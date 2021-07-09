@@ -33,6 +33,7 @@ brew 'git-delta'
 brew "go"
 brew "nodebrew"
 brew "pipenv"
+brew "pyenv"
 brew "direnv"
 brew "postgresql"
 
