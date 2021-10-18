@@ -29,6 +29,7 @@ brew 'colordiff'
 brew 'gnu-sed'
 brew 'exa'
 brew 'git-delta'
+brew 'athenacli'
 
 brew "go"
 brew "nodebrew"
