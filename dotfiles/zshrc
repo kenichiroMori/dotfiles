@@ -57,7 +57,8 @@ add-zsh-hook preexec set-cz-issues
 # export GOROOT=/usr/local/opt/go/libexec
 export GOPATH=$HOME/src/go
 export GOBIN=$GOPATH/bin
-export PATH="$(brew --prefix)/bin:$PATH";
+export PATH="$PATH:/opt/homebrew/bin"
+# export PATH="$(brew --prefix)/bin:$PATH";
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH=$HOME/src/tool/node/node_modules/.bin:$PATH
 export PATH=/usr/local/share/git-core/contrib/diff-highlight:$PATH
@@ -69,7 +70,8 @@ export PSQL_EDITOR=vi
 export PIPENV_VENV_IN_PROJECT=true
 
 # npm install でコケるので
-export NODE_EXTRA_CA_CERTS=/usr/local/etc/openssl/cert.pem
+export REQUESTS_CA_BUNDLE='/Library/Application Support/Netskope/STAgent/download/nscacert.pem'
+export NODE_EXTRA_CA_CERTS='/Library/Application Support/Netskope/STAgent/download/nscacert.pem'
 
 # direnv
 type direnv > /dev/null 2>&1 && eval "$(direnv hook zsh)"
