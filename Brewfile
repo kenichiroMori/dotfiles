@@ -30,6 +30,7 @@ brew 'gnu-sed'
 brew 'exa'
 brew 'git-delta'
 brew 'athenacli'
+brew "localstack"
 
 brew "go"
 brew "nodebrew"
@@ -40,7 +41,7 @@ brew "postgresql"
 
 cask 'skitch'
 cask 'vagrant'
-cask 'virtualbox'
+#cask 'virtualbox'
 cask 'google-chrome'
 cask 'google-japanese-ime'
 cask 'firefox'
