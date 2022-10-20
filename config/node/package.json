@@ -9,7 +9,7 @@
     "commitizen": "^4.2.4",
     "honkit": "^3.6.20",
     "json-schema-to-typescript": "^10.1.4",
-    "npm-check-updates": "^11.7.1",
+    "npm-check-updates": "^16.3.14",
     "puppeteer": "^10.0.0"
   },
   "scripts": {
