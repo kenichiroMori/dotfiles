@@ -5,7 +5,7 @@
     default = simple
 [core]
     editor = code --wait
-    pager = less -R
+    pager = delta
     excludesfile = ~/.gitignore_global
 [color]
     ui = auto
@@ -33,12 +33,20 @@
     sync = "!git-sync.sh"
     publish = "!git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)"
 [pager]
-    diff = delta --color-only --theme='Dracula'
+    diff = delta
+    log = delta
+    reflog = delta
+    show = delta
 [interactive]
-    diffFilter = delta --color-only --theme='Dracula'
-[diff]
-    compactionHeuristic = true
+    diffFilter = delta --color-only
+# [diff]
+#     compactionHeuristic = true
 [fetch]
     prune = true
-[http]
-    sslVerify = false
+# [http]
+#     sslVerify = false
+[delta]
+    syntax-theme = Dracula
+    line-numbers = true
+    side-by-side = true
+    navigate = true

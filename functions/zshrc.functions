@@ -53,8 +53,13 @@ function genpw() {
 
 ## mfa
 function mfa() {
-    oathtool --totp --base32 "${1}"
-    oathtool --totp --base32 "${1}" | pbcopy
+    secret="${1}"
+    if [ ${#secret} -eq 88 ]; then
+        secret=$(echo ${secret} | base64 -d)
+    fi
+    oathtool --totp --base32 "${secret}"
+    oathtool --totp --base32 "${secret}" | pbcopy
+
 }
 
 function set-cz-issues() {

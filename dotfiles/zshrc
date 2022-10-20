@@ -55,21 +55,26 @@ add-zsh-hook preexec set-cz-issues
 # PATH
 ## TODO: 見直したほうがいいのでコメント
 # export GOROOT=/usr/local/opt/go/libexec
-export GOPATH=$HOME/src/go
-export GOBIN=$GOPATH/bin
-export PATH="$PATH:/opt/homebrew/bin"
+export GOPATH=$HOME/src/go:$HOME/src/project/adminpack/adminpack-cli/src/
+export GOBIN=$HOME/src/go/bin
+# export PATH="$PATH:/opt/homebrew/bin"
+export PATH="/opt/homebrew/bin:$PATH"
+export PATH="$PATH:/opt/homebrew/sbin"
 # export PATH="$(brew --prefix)/bin:$PATH";
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH=$HOME/src/tool/node/node_modules/.bin:$PATH
 export PATH=/usr/local/share/git-core/contrib/diff-highlight:$PATH
 export PATH=~/bin:$PATH
 export PATH=~/bin/node-bin:$PATH
+export PATH=~/.local/bin/:$PATH
+export PATH=${GOBIN}:$PATH
 export PSQL_EDITOR=vi
 
 # pipenvの.venvのプロジェクト直下に作る
 export PIPENV_VENV_IN_PROJECT=true
 
 # npm install でコケるので
+export AWS_CA_BUNDLE='~/.aws/nskp_config/netskope-cert-bundle.pem'
 export REQUESTS_CA_BUNDLE='/Library/Application Support/Netskope/STAgent/download/nscacert.pem'
 export NODE_EXTRA_CA_CERTS='/Library/Application Support/Netskope/STAgent/download/nscacert.pem'
 
