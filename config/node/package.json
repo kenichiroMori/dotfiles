@@ -7,7 +7,7 @@
     "@google/clasp": "^2.3.2",
     "@mermaid-js/mermaid-cli": "^9.1.6",
     "commitizen": "^4.2.4",
-    "honkit": "^3.6.20",
+    "honkit": "^4.0.2",
     "json-schema-to-typescript": "^10.1.4",
     "npm-check-updates": "^16.3.14",
     "puppeteer": "^19.0.0"
