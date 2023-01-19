@@ -2,7 +2,7 @@
 set -Ceuo pipefail
 
 echo "installing Homebrew ..."
-which brew >/dev/null 2>&1 || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+which brew >/dev/null 2>&1 || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 echo "run brew doctor ..."
 which brew >/dev/null 2>&1 && brew doctor
